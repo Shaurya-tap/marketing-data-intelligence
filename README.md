@@ -7,11 +7,9 @@ An end-to-end machine learning system for an e-commerce platform. It does two th
 
 Everything is wrapped in a web API (FastAPI) and can run anywhere with Docker.
 
-> **New to all this?** Read the "Plain-English glossary" at the bottom first. Every technical word is explained there.
 
 ---
 
-## What's in the box
 
 ```
 marketing-data-intelligence/
@@ -142,7 +140,6 @@ aren't installed.)
 
 ---
 
-## How this maps to the assignment
 
 | Assignment requirement | Where it lives |
 |------------------------|----------------|
@@ -160,25 +157,3 @@ aren't installed.)
 
 ---
 
-## Plain-English glossary
-
-- **Machine learning model** — a program that learns patterns from past data so it
-  can make predictions about new data. Ours learns "what discount fits this product".
-- **Feature** — an input the model uses to decide (price, rating, category…).
-- **Target** — the thing we're predicting (discount %).
-- **Training / test split** — we teach the model on most of the data, then quiz it
-  on data it has never seen, to measure honest performance.
-- **RMSE / MAE** — average size of the model's errors. Lower is better.
-- **R²** — how much of the variation the model explains. 1.0 = perfect, 0 = useless.
-- **LLM (Large Language Model)** — an AI that understands and writes text (like the
-  thing behind chatbots). "Open-source" means free to download and run yourself.
-- **Embedding** — turning text into a list of numbers so a computer can measure how
-  similar two pieces of text are in meaning.
-- **RAG (Retrieval-Augmented Generation)** — give the LLM the right reference text
-  first, then ask it to answer — like an open-book exam.
-- **API** — a way for other programs (or a website) to talk to your code over the web.
-- **FastAPI / uvicorn** — the tools that run our web API.
-- **Docker / container** — packaging the app + everything it needs into one box that
-  runs identically on any machine.
-- **Data drift** — when live data starts looking different from training data; a sign
-  it may be time to retrain.
